@@ -5,6 +5,7 @@ defmodule Restnull.Mixfile do
     [ app: :restnull,
       version: "0.0.1",
       elixir: "~> 0.12.5",
+      escript_main_module: Restnull,
       deps: deps ]
   end
 

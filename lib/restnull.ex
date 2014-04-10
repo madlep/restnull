@@ -1,6 +1,10 @@
 defmodule Restnull do
   use Application.Behaviour
 
+  def main(_args) do
+    :timer.sleep(:infinity)
+  end
+
   def start(_type, _args) do
     {:ok, _} = start_cowboy()
     Restnull.Supervisor.start_link()
